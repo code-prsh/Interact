@@ -32,6 +32,7 @@ export default function Router() {
       ],
     },
     {element: <LoginPage />, path: "auth/login" },
+    {element: <HomePage />, path: "/"}
 ]);
 }
 
@@ -46,4 +47,7 @@ const NewPasswordPage = Loadable(
 
 const VerifyPage = Loadable(
   lazy(() => import("../pages/auth/Verify"))
+);
+const HomePage = Loadable(
+  lazy(() => import("../pages/user/Home"))
 );
