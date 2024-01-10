@@ -32,10 +32,12 @@ export default function Router() {
       ],
     },
     {element: <LoginPage />, path: "auth/login" },
+    {element:<ProfilePage/>,path:"/profile"}
 ]);
 }
 
 const LoginPage = Loadable(lazy(() => import("../pages/auth/Login")));
+const ProfilePage = Loadable(lazy(() => import("../pages/User/Profile")));
 const RegisterPage = Loadable(lazy(() => import("../pages/auth/Register")));
 const ResetPasswordPage = Loadable(
   lazy(() => import("../pages/auth/ResetPassword"))

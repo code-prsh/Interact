@@ -4,12 +4,14 @@ import Router from './routes'
 
 const App = () => {
   return (
-    <div>
+    <>
     <BrowserRouter>{" "}
-    <Router />{" "}
+    <Router />
     </BrowserRouter>
+   
+    </>
       
-    </div>
+    
   )
 }
 
