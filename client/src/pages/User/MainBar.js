@@ -3,6 +3,7 @@ import Storywala from "./MainBarComponent/Storywala";
 import Top_portion from "./MainBarComponent/Top_portion";
 import Dif_Tab from "./MainBarComponent/Dif_Tab";
 import Dif_Tab_item from "./Dif_Tab_item";
+import Footer from "./Footer";
 
 function MainBar() {
   return (
@@ -24,6 +25,9 @@ function MainBar() {
         <Dif_Tab />
 
         <Dif_Tab_item/>
+        <Footer/>
+       
+        
       </div>
     </div>
   );

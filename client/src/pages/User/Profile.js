@@ -8,7 +8,7 @@ const Profile = () => {
       <div className="d-flex">
         <Sidebar/>
          <MainBar/>
-        
+         
       </div>
     </>
   );

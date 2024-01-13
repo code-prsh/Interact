@@ -5,6 +5,18 @@
     border-radius: 0px ;
     border-top: 2px solid black;
 } */
+.lang_list{
+    list-style-type: none;
+    font-weight:500;
+    font-size: 12px;
+    background-color: rgb(198, 203, 203);
+    padding:  2px 10px;
+
+    &:hover{
+        background-color: rgb(45, 45, 214);
+        color:white;
+    }
+}
 .bor
 {
     border-radius: 0px !important;
@@ -14,4 +26,34 @@
 } 
 .dn{
     display: none !important;
-}                     
+}  
+.gridbox{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+
+}  
+.butt{
+    font-size: 12px !important;
+    border: 0px !important;
+    background-color: white !important;
+    color: black !important;
+    cursor: pointer !important;
+    border: 1px solid white !important;
+    &:hover{
+        border-bottom: 1px solid black !important;
+        border-radius: 0px;
+    }
+} 
+.bottom_tow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px;
+}
+#all_lang{
+    display: none;
+    border-radius: 5px;
+
+}
