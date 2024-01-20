@@ -14,11 +14,10 @@ import {
 import { RHFTextField } from "../../components/hook-forms";
 import { Eye, EyeSlash } from "phosphor-react";
 
-import { useSearchParams } from "react-router-dom";
 
 
 const NewPasswordForm = () => {
-  const [queryParameters] = useSearchParams();
+  
   //const dispatch = useDispatch();
   const [showPassword, setShowPassword] = useState(false);
 

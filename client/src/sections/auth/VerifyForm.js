@@ -1,13 +1,11 @@
-import { useState } from "react";
 import * as Yup from "yup";
 // form
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 // @mui
-import { Stack, IconButton, InputAdornment, Button } from "@mui/material";
+import { Stack, Button } from "@mui/material";
 // components
-import FormProvider, { RHFTextField } from "../../components/hook-forms";
-import { Eye, EyeSlash } from "phosphor-react";
+import FormProvider from "../../components/hook-forms";
 import RHFCodes from "../../components/hook-forms/RHFCodes";
 
 // ----------------------------------------------------------------------
@@ -39,8 +37,8 @@ export default function VerifyForm() {
   });
 
   const {
-    handleSubmit,
-    formState: { isSubmitting, errors },
+    handleSubmit
+   
   } = methods;
 
   const onSubmit = async (data) => {

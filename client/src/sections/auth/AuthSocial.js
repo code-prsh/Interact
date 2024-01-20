@@ -1,5 +1,5 @@
 import { Divider, IconButton, Stack } from "@mui/material";
-import { FacebookLogo,GoogleLogo, TwitterLogo } from "phosphor-react";
+import { GoogleLogo, TwitterLogo } from "phosphor-react";
 import React from "react";
 
 import FacebookIcon from '@mui/icons-material/Facebook';
