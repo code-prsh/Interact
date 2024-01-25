@@ -20,7 +20,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Sidebar1 = () => {
   return (
-    <div className='container'>
+    <div style={{width: '250px', height: '100vh'}}>
     <div  style={{width: '250px', height: '100vh',marginTop:'10px', position: "fixed",
              
              

@@ -5,6 +5,9 @@
     border-radius: 0px ;
     border-top: 2px solid black;
 } */
+.lb{
+    border-left: 3px solid black !important;
+}
 .lang_list{
     list-style-type: none;
     font-weight:500;

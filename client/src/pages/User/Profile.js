@@ -1,6 +1,8 @@
 import React from 'react'
-import MainBar from './MainBar';
+// import MainBar from './MainBar';
 import Sidebar1 from './Sidebar1';
+import Your_Activity from './Your_Activity';
+import Footer from './Footer';
 
 
 const Profile = () => {
@@ -9,7 +11,11 @@ const Profile = () => {
       <div className="d-flex">
         {/* <Sidebar/> */}
         <Sidebar1/>
-         <MainBar/>
+        <div>
+        <Your_Activity/>
+         {/* <MainBar/> */}
+         
+         </div>
          
       </div>
     </>

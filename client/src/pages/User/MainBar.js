@@ -25,8 +25,8 @@ function MainBar() {
         <Dif_Tab />
 
         <Dif_Tab_item/>
+        
         <Footer/>
-       
         
       </div>
     </div>
