@@ -17,22 +17,24 @@ import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import ReportProblemIcon from '@mui/icons-material/ReportProblem';
 import StormIcon from '@mui/icons-material/Storm';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import './sidebar.css'
+
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 const Sidebar = () => {
   return (
-    <div style={{width: '250px', borderRight: '0.1px solid gray', height: '100vh', margin: '0'}}>
-      <div className="logo" style={{padding: '30px 0px 40px 30px'}}><span style={{fontSize: '30px', fontFamily: "'Lobster', sans-serif"}}>Instagram</span></div>
+    <div className='main'>
+      <div className="logo" style={{padding: '30px 0px 40px 30px'}}><span className='content' style={{fontSize: '30px', fontFamily: "'Lobster', sans-serif"}}>Instagram</span></div>
       {/* <div style={{height: '200px'}}> */}
       
       <Stack spacing={2} direction="column" sx={{width: '150px', marginLeft: '20px', textAlign: 'left',  alignItems: 'start'}}>
-      <Button variant="text"  sx={{color: 'black'}} startIcon={<HomeIcon />}>Home</Button>
-      <Button variant="text"  sx={{color: 'black'}} startIcon={<SearchIcon />}> Search</Button>
-      <Button variant="text"  sx={{color: 'black'}} startIcon={<ExploreIcon />}>Explore</Button>
-      <Button variant="text" sx={{color: 'black'}} startIcon={<SlowMotionVideoIcon />}>Reels</Button>
-      <Button variant="text" sx={{color: 'black'}} startIcon={<TelegramIcon />}>Messages</Button>
-      <Button variant="text" sx={{color: 'black'}} startIcon={<FavoriteBorderIcon />}>Notifications</Button>
-      <Button variant="text" sx={{color: 'black'}} startIcon={<AddCircleIcon />}>Create</Button>
-      <Button variant="text" sx={{color: 'black'}} startIcon={<AccountCircleIcon />}>Profile</Button>
+      <Button variant="text"  sx={{color: 'black'}} startIcon={<HomeIcon />}><span className='content'>Home</span></Button>
+      <Button variant="text"  sx={{color: 'black'}} startIcon={<SearchIcon />}> <span className='content'>Search</span></Button>
+      <Button variant="text"  sx={{color: 'black'}} startIcon={<ExploreIcon />}><span className='content'>Explore</span></Button>
+      <Button variant="text" sx={{color: 'black'}} startIcon={<SlowMotionVideoIcon />}><span className='content'>Reels</span></Button>
+      <Button variant="text" sx={{color: 'black'}} startIcon={<TelegramIcon />}><span className='content'>Message</span></Button>
+      <Button variant="text" sx={{color: 'black'}} startIcon={<FavoriteBorderIcon />}><span className='content'>Notification</span></Button>
+      <Button variant="text" sx={{color: 'black'}} startIcon={<AddCircleIcon />}><span className='content'>create</span></Button>
+      <Button variant="text" sx={{color: 'black'}} startIcon={<AccountCircleIcon />}><span className='content'>profile</span></Button>
       <div className="dropdown">
         <button className="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" >
         <FontAwesomeIcon icon={faBars} style={{ marginRight: '10px', marginLeft: '-7px' }} />  More
