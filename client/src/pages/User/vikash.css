@@ -20,6 +20,14 @@
         color:white;
     }
 }
+.put_col{
+    color:rgb(10, 130, 235) !important;
+    background-color:rgba(10, 130, 235, 0.438) !important;
+  
+}
+.block{
+    display: none;
+}
 .bor
 {
     border-radius: 0px !important;

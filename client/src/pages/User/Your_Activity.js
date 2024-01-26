@@ -11,7 +11,12 @@ import { Button } from "@mui/material";
 import styled from "@emotion/styled";
 import Dif_tab1 from "./Your_activity_component/Dif_tab1";
 import "./vikash.css";
-import Likes_item from "./Likes_item";
+import SimpleDialogDemo from "./DialogueBox";
+import Nothing from "./Nothing";
+import Likes_item_activity from "./Likes_item_activity";
+import Comment_wala from "./Comment_wala";
+import Story_Src from "./Story_Src";
+import './vikash.css'
 function Your_Activity() {
   const Buttond = styled(Button)(() => ({
     backgroundColor: "white",
@@ -94,7 +99,7 @@ function Your_Activity() {
                   putleftbor("Interactions");
                 }}
               >
-                <SwapHoriz sx={{ width: "50px", height: "50px" }} />
+                <SwapHoriz sx={{ width: "45px", height: "45px" }} />
                 <div
                   className="text"
                   style={{
@@ -119,7 +124,7 @@ function Your_Activity() {
                   putleftbor("Photosw");
                 }}
               >
-                <PhotoLibrary sx={{ width: "50px", height: "50px" }} />
+                <PhotoLibrary sx={{ width: "45px", height: "45px" }} />
                 <div
                   className="text"
                   style={{
@@ -144,7 +149,7 @@ function Your_Activity() {
                   putleftbor("Historys");
                 }}
               >
-                <CalendarMonth sx={{ width: "50px", height: "50px" }} />
+                <CalendarMonth sx={{ width: "45px", height: "45px" }} />
                 <div
                   className="text"
                   style={{
@@ -169,7 +174,7 @@ function Your_Activity() {
                   putleftbor("Adsa");
                 }}
               >
-                <Campaign sx={{ width: "50px", height: "50px" }} />
+                <Campaign sx={{ width: "45px", height: "45px"  }} />
                 <div
                   className="text"
                   style={{
@@ -192,7 +197,7 @@ function Your_Activity() {
                   putleftbor("Informationw");
                 }}
               >
-                <ArrowDownward sx={{ width: "50px", height: "50px" }} />
+                <ArrowDownward sx={{ width: "45px", height: "45px"  }} />
                 <div
                   className="text"
                   style={{
@@ -221,28 +226,22 @@ function Your_Activity() {
                 height: "2vw",
                 justifyContent: "flex-start",
                 alignItems: "center",
+                marginTop:'10px'
               }}
             >
               <p style={{ marginTop: "20px", marginLeft: "10px" }}>
                 <b>Newest To Oldest</b>
               </p>
-              <button
-                type="button"
-                style={{
-                  border: "1px solid black",
-                  borderRadius: "5px",
-                  marginLeft: "10px",
-                  marginTop: "5px",
-                }}
+             
+               <SimpleDialogDemo/>
+              
                 
-              >
-                <b>Sort & filter</b>
 
-              </button>
+            
            
               <p style={{ position: "relative", left: "390px", top: "7px" }}>
                 <button
-                  style={{
+                  style={{ 
                     border: "0px",
                     backgroundColor: "white",
                     color: txt=="Select"?  "rgb(0, 149, 246)":"#706f6b",
@@ -255,23 +254,13 @@ function Your_Activity() {
                 </button>
               </p>
             </div>
-            <div
-              className="gridboxforphoto"
-              style={{
-                display: "grid",
-                height: "38.1vw",
-                gridTemplateColumns: "repeat(5,1fr)",
-                margin: ".5vw",
-                marginTop:'.7vw',
-                overflow: "scroll",
-              }}
-            >
-              <Likes_item sel={txt} ides="fir"/>
-              <Likes_item sel={txt} ides="sec"/>
-              <Likes_item sel={txt} ides="thi"/>
-             
-             
-            </div>
+
+         <div id="like_a" className="dfjk"> <Likes_item_activity txt={txt}/>  </div>
+         <div id="comments_a" className="dfjk block"> <Comment_wala txt={txt}/> </div>
+         <div  id="story_rep_a" className="dfjk block"> <Story_Src txt={txt}/></div>
+         <div id="nothingg_a" className="dfjk block"> <Nothing /></div>
+            
+            
           </div>
         </div>
       </div>

@@ -3,6 +3,8 @@ import "../Your_activity_component/activity.css";
 import { Button } from "@mui/material";
 import { Comment, FavoriteBorder, RateReview, Reply } from "@mui/icons-material";
 import styled from "@emotion/styled";
+import '../Your_Activity'
+
 
 function Dif_tab1() {
   const Buttond = styled(Button)(() => ({
@@ -13,12 +15,17 @@ function Dif_tab1() {
     padding: "10px",
     boxSizing: "border-box",
   }));
-  function handleonclick(ids)
+  function handleonclick(ids,ids2)
   {
         let a=document.getElementsByClassName('abtn');
+        let b=document.getElementsByClassName('dfjk');
         Array.from(a).forEach(e=>{
             e.classList.remove('bb');
         })
+        Array.from(b).forEach(e=>{
+            e.classList.add('block');
+        })
+        document.getElementById(ids2).classList.remove('block');
         document.getElementById(ids).classList.add('bb');
   }
 
@@ -39,7 +46,7 @@ function Dif_tab1() {
           className="abtn bb"
           id="likes"
           startIcon={<FavoriteBorder sx={{ width: "1vw", height: "1vw" }} />}
-          onClick={()=>{handleonclick("likes")}}
+          onClick={()=>{handleonclick("likes","like_a")}}
         >
           LIKES
           
@@ -48,7 +55,7 @@ function Dif_tab1() {
           className="abtn"
           id="comments"
           startIcon={<Comment sx={{ width: "1vw", height: "1vw" }} />}
-          onClick={()=>{handleonclick("comments")}}
+          onClick={()=>{handleonclick("comments","comments_a")}}
         >
           COMMENTS
         </Buttond>
@@ -56,7 +63,7 @@ function Dif_tab1() {
           className="abtn"
           id="storyreply"
           startIcon={<Reply sx={{ width: "1vw", height: "1vw" }} />}
-          onClick={()=>{handleonclick("storyreply")}}
+          onClick={()=>{handleonclick("storyreply","story_rep_a")}}
         >
           STORY REPLIES
         </Buttond>
@@ -64,7 +71,7 @@ function Dif_tab1() {
           className="abtn "
           id="reviews"
           startIcon={<RateReview sx={{ width: "1vw", height: "1vw" }} />}
-          onClick={()=>{handleonclick("reviews")}}
+          onClick={()=>{handleonclick("reviews","nothingg_a")}}
 
         >
           REVIEWS
