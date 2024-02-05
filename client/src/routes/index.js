@@ -7,6 +7,7 @@ import { Navigate, useRoutes } from "react-router-dom";
 //import { DEFAULT_PATH } from "../config";
 import LoadingScreen from "../components/LoadingScreen";
 import MainLayout from "../layouts/main";
+import Explore from "../pages/user/explore/Explore";
 
 //Higher order component
 const Loadable = (Component) => (props) => {
@@ -32,7 +33,8 @@ export default function Router() {
       ],
     },
     {element: <LoginPage />, path: "auth/login" },
-    {element: <HomePage />, path: "/"}
+    {element: <HomePage />, path: "/"},
+    {element: <Explore />, path: "/explore"}
 ]);
 }
 
@@ -49,5 +51,8 @@ const VerifyPage = Loadable(
   lazy(() => import("../pages/auth/Verify"))
 );
 const HomePage = Loadable(
-  lazy(() => import("../pages/user/Home"))
+  lazy(() => import("../pages/user/homepage/Home"))
 );
+const explore = Loadable(
+  lazy(() => import("../pages/user/explore/Explore"))
+)

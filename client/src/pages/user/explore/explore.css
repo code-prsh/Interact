@@ -1,0 +1,83 @@
+
+.whole{
+    margin-left: 280px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.upper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.upperLeft{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-between;
+}
+.post1, .post2, .post3, .post4, .post5, .post6, .post7, .post8{
+    margin: 2px;
+    height: 320px;
+    width: 320px;
+}
+.post10, .post20{
+    margin: 2px;
+    height: 640px;
+    width: 320px;
+}
+.reel{
+    margin-left: 300px;
+    position: absolute;
+    z-index: 1;
+    color: white;
+}
+.lower{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.lowerRight{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-between;
+}
+.lc1, .lc2, .lc3, .lc4, .lc5, .lc6, .lc7, .lc8, .lc10, .lc20{
+    visibility: hidden;
+    color: white;
+    top: 50%;
+    left: 30%;
+    position: absolute;
+    z-index: 1;
+}
+body:has(.post1:hover) .lc1 {
+    visibility: visible;
+}
+body:has(.post2:hover) .lc2 {
+    visibility: visible;
+}
+body:has(.post3:hover) .lc3 {
+    visibility: visible;
+}
+body:has(.post4:hover) .lc4 {
+    visibility: visible;
+}
+body:has(.post10:hover) .lc10 {
+    visibility: visible;
+}
+body:has(.post20:hover) .lc20 {
+    visibility: visible;
+}
+body:has(.post5:hover) .lc5 {
+    visibility: visible;
+}
+body:has(.post6:hover) .lc6 {
+    visibility: visible;
+}
+body:has(.post7:hover) .lc7 {
+    visibility: visible;
+}
+body:has(.post8:hover) .lc8 {
+    visibility: visible;
+}

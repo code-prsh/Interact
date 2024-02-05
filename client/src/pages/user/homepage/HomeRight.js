@@ -1,7 +1,7 @@
 import { Stack } from "@mui/material";
 import React, { useState } from "react";
 // import { faker } from "@faker-js/faker";
-import logo from "../../assets/Images/story.jpg";
+// import logo from "../../../assets/Images/story.jpg";
 import ProfileImage from "./ProfileImage";
 import PostHeader from "./PostHeader";
 import PostImage from "./PostImage";

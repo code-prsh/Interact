@@ -27,14 +27,14 @@ const Sidebar = () => {
       {/* <div style={{height: '200px'}}> */}
       
       <Stack spacing={2} direction="column" sx={{width: '150px', marginLeft: '20px', textAlign: 'left',  alignItems: 'start'}}>
-      <Button variant="text"  sx={{color: 'black'}} startIcon={<HomeIcon />}><span className='content'>Home</span></Button>
-      <Button variant="text"  sx={{color: 'black'}} startIcon={<SearchIcon />}> <span className='content'>Search</span></Button>
-      <Button variant="text"  sx={{color: 'black'}} startIcon={<ExploreIcon />}><span className='content'>Explore</span></Button>
-      <Button variant="text" sx={{color: 'black'}} startIcon={<SlowMotionVideoIcon />}><span className='content'>Reels</span></Button>
-      <Button variant="text" sx={{color: 'black'}} startIcon={<TelegramIcon />}><span className='content'>Message</span></Button>
-      <Button variant="text" sx={{color: 'black'}} startIcon={<FavoriteBorderIcon />}><span className='content'>Notification</span></Button>
-      <Button variant="text" sx={{color: 'black'}} startIcon={<AddCircleIcon />}><span className='content'>create</span></Button>
-      <Button variant="text" sx={{color: 'black'}} startIcon={<AccountCircleIcon />}><span className='content'>profile</span></Button>
+      <Button variant="text"  sx={{color: 'black'}} startIcon={<HomeIcon />}><a href='/' className='content'>Home</a></Button>
+      <Button variant="text"  sx={{color: 'black'}} startIcon={<SearchIcon />}> <a  className='content'>Search</a></Button>
+      <Button variant="text"  sx={{color: 'black'}} startIcon={<ExploreIcon />}><a href='/explore' className='content'>Explore</a></Button>
+      <Button variant="text" sx={{color: 'black'}} startIcon={<SlowMotionVideoIcon />}><a className='content'>Reels</a></Button>
+      <Button variant="text" sx={{color: 'black'}} startIcon={<TelegramIcon />}><a className='content'>Message</a></Button>
+      <Button variant="text" sx={{color: 'black'}} startIcon={<FavoriteBorderIcon />}><a className='content'>Notification</a></Button>
+      <Button variant="text" sx={{color: 'black'}} startIcon={<AddCircleIcon />}><a className='content'>create</a></Button>
+      <Button variant="text" sx={{color: 'black'}} startIcon={<AccountCircleIcon />}><a className='content'>profile</a></Button>
       <div className="dropdown">
         <button className="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" >
         <FontAwesomeIcon icon={faBars} style={{ marginRight: '10px', marginLeft: '-7px' }} />  More
@@ -54,6 +54,7 @@ const Sidebar = () => {
           {/* <li><a className="dropdown-item" href="#">Action</a></li>
           <li><a className="dropdown-item" href="#">Another action</a></li>
           <li><a className="dropdown-item" href="#">Something else here</a></li> */}
+          
         </ul>
       </div>
     </Stack>

@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { faker } from '@faker-js/faker';
-import logo from '../../assets/Images/story.jpg'
+import logo from '../../../assets/Images/story.jpg'
 // import Avatar from 'react-avatar';
 
 const ProfileImage = (props) => {
